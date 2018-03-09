@@ -1,0 +1,17 @@
+<h4 class="welcome-message">{{ message }}</h4>
+
+<ul>
+{{#each movies }}
+<li>
+<a href="/video/{{ vidSource }}">
+  <img src="images/{{ vidThumb }}.jpg" alt="movie Thumbnails">
+</a></li>
+{{/each }}
+</ul>
+<!-- use a Handlebars each loop to pull in the data -> you need a video ID and a video thumbnail -->
+
+<!-- create a handlebars "each" loop that creates an li inside the UL below. inside the li, there should be an a (anchor) tag with an href of /video/  Append the videoSource to that url with Handlebars. Put an image inside the a tag; its source should be the video thumbnail (use Handlebars) -->
+
+<p class="instructions">
+  <i>Click on a poster to preview the movie!</i>
+</p>

@@ -1,0 +1,13 @@
+<a href="/" class="back-home"><= back to movies!</a>
+
+<video controls autoplay>
+  <!-- add a dynamic video source to the src attribute below with handlebars (point to the video folder and add the file) -->
+  <source src="/videos/{{ video.vidSource }}.mp4" type="video/mp4">
+</video>
+
+<section class="movie-details">
+  <!-- add the video title -->
+  <h3> {{ video.videoTitle }}</h3>
+  <!-- add the video description -->
+  <p> {{ video.videoDescription }}</p>
+</section>
