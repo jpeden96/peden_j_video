@@ -1,8 +1,8 @@
-## Streamster Movie Player ##
+# Streamster Movie Player #
 
 A node.js website using express, handlebars, and mysql to show movie information pulled from a database.
 
-# Getting Started #
+## Getting Started ##
 
 Clone the master branch.
 In terminal, cd into the project root.
@@ -15,14 +15,14 @@ In FOL, I have attached the 21 film trailer videos (mp4) and have exported the t
 You will need to create a database and import the table found in the attached zip file.
 Import the files and place in the public folder.
 
-# Prerequisites #
+## Prerequisites ##
 
 - Node.js/NPM, MAMP or WAMP, phpMyAdmin
 
-# License #
+## License ##
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-# Authors #
+## Authors ##
 
 Julia Peden
