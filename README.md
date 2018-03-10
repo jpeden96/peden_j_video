@@ -26,3 +26,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Authors ##
 
 Julia Peden
+
+Note: I wrote all of the code in one sit down, so I didn't push multiple times. I also never made another branch, which I know is bad practice. I will focus on that next time to ensure I am working on working branches rather than the master branch.
