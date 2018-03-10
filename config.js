@@ -3,7 +3,7 @@ var config = {
   password : "root",
   port: 8889,
   host: "localhost",
-  database: "db_nehlab",
+  database: "db_movies",
 
 }
 

@@ -1,13 +1,61 @@
-<a href="/" class="back-home"><= back to movies!</a>
+<a href="javascript: window.history.go(-1)" class="back-home"> < back to Movies!</a>
 
-<video controls autoplay>
+<video controls autoplay class="video">
   <!-- add a dynamic video source to the src attribute below with handlebars (point to the video folder and add the file) -->
-  <source src="/videos/{{ video.vidSource }}.mp4" type="video/mp4">
+  <source src="/videos/{{ video.movies_trailer }}" type="video/mp4">
 </video>
 
 <section class="movie-details">
   <!-- add the video title -->
-  <h3> {{ video.videoTitle }}</h3>
+  <h3>{{ video.movies_title }}</h3>
   <!-- add the video description -->
-  <p> {{ video.videoDescription }}</p>
+  <p>{{ video.movies_year }}</p>
+  <p>{{ video.movies_storyline }}</p>
 </section>
+
+<section class="comments">
+  <div class="form">
+  <h3>Join the Conversation.</h3>
+    <h4>Want to leave a comment?</h4><br>
+  <form class="" action="video" method="post">
+    <label>Name</label><br>
+    <input type="text" name="name" class="inputText" value=""><br><br>
+    <label>Comment</label><br>
+    <input type="text" name="name" class="inputText" value=""><br><br>
+    <input type="submit" name="submit" class="submit" value="Post">
+  </form>
+</div>
+
+<div class="commentboard"> <!--this would be connected through the database for comments -->
+  <div class="onecomment">
+    <h3>Tester</h3>
+    <p>This is what it would look like if someone commented</p>
+</div>
+<div class="onecomment">
+  <h3>Joan</h3>
+  <p>This is my favourite movie to watch omg so fun aghhg blagh </p>
+</div>
+<div class="onecomment">
+  <h3>Tyson</h3>
+  <p>great soundtrack!</p>
+</div>
+<div class="onecomment">
+  <h3>Carol</h3>
+  <p>i love the actors in this one!</p>
+</div>
+<div class="onecomment">
+  <h3>Joan</h3>
+  <p>This is my favourite movie to watch omg so fun aghhg blagh </p>
+</div>
+<div class="onecomment">
+  <h3>Tyson</h3>
+  <p>great soundtrack!</p>
+</div>
+</section>
+<div class="social">
+  <h3>Share on social media</h3>
+    <a href="facebook.com">
+      <img src="/img/facebook.png" alt="Facebook" class="socialbuttons"></a>
+      <a href="twitter.com">
+        <img src="/img/twitter.png" alt="Twitter" class="socialbuttons"></a>
+</div>

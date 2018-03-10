@@ -1,0 +1,128 @@
+* { margin: 0; border: 0; padding: 0; }
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  padding:    20px;
+}
+
+main {
+  padding-top: 20px;
+}
+
+.welcome-message { text-align: center; font-size: 2em; margin-bottom: 40px; }
+
+ul { width: 90; margin: 0 auto; text-align: center; padding-top: 20px; }
+ul li { display: inline-block; padding: 0 8px; }
+
+a {
+  text-decoration: none;
+}
+
+.back-home {
+  color: white;
+  margin-bottom: 16px;
+  display: block;
+  padding-left: 8px;
+}
+
+a img {
+  height: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+video {
+  margin: 0 10%;
+  width:   80%;
+}
+
+a img:hover {
+  border: 2px solid #fff;
+}
+
+.instructions { padding-top: 30px; text-align: center; }
+
+.movie-details {
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.movie-details h3 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.kidsheader {
+  text-align: center;
+  color: #f9c22a;
+  clear: both;
+}
+.kidsheader img {
+  height: 100px;
+  width:   auto;
+}
+
+/*dropdown */
+
+.dropdown {
+  float:  right;
+}
+.dropbtn {
+    background-color: #f9c22a;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #d8a71e;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+}
+
+.dropdown-content a:hover
+{
+  background-color: #d8a71e;
+}
+
+.show {
+  display:block;
+}
+/* span {
+  font-family:    Arial, sans-serif;
+  font-size:    1.8em;
+  color: #83a9ea;
+} */

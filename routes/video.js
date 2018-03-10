@@ -4,7 +4,7 @@ var connect = require('../utils/sqlConnect');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-connect.query('SELECT * FROM movies', (err, result) => {
+connect.query('SELECT * FROM tbl_movies', (err, result) => {
     if (err) {
       throw err; console.log(err);
     } else {
@@ -18,16 +18,15 @@ connect.query('SELECT * FROM movies', (err, result) => {
   });
   });
 
-
   router.get('/:name', function(req, res, next) {
-  connect.query(`SELECT * FROM movies WHERE vidSource='${req.params.name}'`, (err, result) => {
+  connect.query(`SELECT * FROM tbl_movies WHERE movies_trailer='${req.params.name}'`, (err, result) => {
       if (err) {
         throw err; console.log(err);
       } else {
         console.log(result);
 
         res.render('video', {
-          title: 'Movie Player',
+          title: 'Streamster - Videos',
           video : result[0]
         });
       }

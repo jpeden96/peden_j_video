@@ -1,0 +1,21 @@
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Switch User</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="adults">Adults</a>
+    <a href="kids">Kids Zone</a>
+    <a href="/">Log Out</a>
+  </div>
+</div><br>
+
+<div class="kidsheader">
+  <img src="./img/kidszone1.png" src="Kids Icon">
+<h1>{{ message }}</h1>
+</div>
+<ul>
+{{#each movies }}
+<li>
+<a href="/video/{{ movies_trailer }}">
+  <img src="/img/{{ movies_cover }}" alt="movie Thumbnails">
+</a></li>
+{{/each }}
+</ul>
